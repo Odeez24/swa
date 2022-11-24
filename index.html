@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>SwA</title>
-        <script src="./script/script.js"></script>
+        <script type="module" src="./script/script.js"></script>
         <link rel="stylesheet" href="./style/index.css">
     </head>
     <body>
@@ -17,16 +17,16 @@
                 <a class="inv-button" href="https://discord.gg/vFtvBXPEh4" title="Viens en enfer" target="_blank" rel="noopener noreferrer"><span class="inv-text">Pour rejoindre le serveur</span></a>
             </div>
             <div id="ajout_membre">
-                <p id="text_ajout">Pour ajouter un membre du serveur
+                <p id="text_ajout">Pour ajouter un membre du serveur : 
                     <button id="openForm" >Cliquer ici</button>
                 </p>
-                <div id="form" hidden>
+                <div id="form">
                     <form id="formulaire_ajout" name="ajout_membre" method="post"> 
                         <p class="form_ajout">
                             Pseudos : <input type="text" name="pseudo" id="pseudo" required/>
                             <br/>
-                            Description : <input type="text" name="desc" id="desc" />
-                            <br />
+                            Description : <input type="textarea" name="desc" id="desc"/>
+                            <br/>
                             Rôle : <input type="text" name="role" id="role"/>
                             <br/>
                             Membre depuis : <input type="date" name="date_join" id="join"/>

@@ -17,6 +17,10 @@ function defileMembre(e) {
 
 function ajout(e){
   e.preventDefault();
-  
+
   let pseudo = document.getElementById('pseudo').value;
+  let desc = document.getElementById('desc').value;
+  let role = document.getElementById('role').value;
+  let date = document.getElementById('join').value;
+  let lien = document.getElementById('lien').value;
 }
