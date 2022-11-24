@@ -96,6 +96,15 @@ footer{
     margin: 1px;
 }
 
+
+
+#form{
+    font-size: 15px;
+    display: none;
+}
+
+
+
 /*<---Footer--->*/
 
 #contact{
