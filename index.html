@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>SwA</title>
+        <script src="./script/script.js"></script>
         <link rel="stylesheet" href="./style/index.css">
     </head>
     <body>
@@ -17,30 +18,22 @@
             </div>
             <div id="ajout_membre">
                 <p id="text_ajout">Pour ajouter un membre du serveur
-                    <button onclick="defile_membre('form')">Cliquer ici</button>
+                    <button id="openForm" >Cliquer ici</button>
                 </p>
-                <script type="text/javascript">
-                function defile_membre(id) {
-                    document.getElementById(id).style.display = "block";
-                }
-                function ajout(){
-
-                }
-                </script>
-                <div id="form">
-                    <form id="formulaire_ajout" name="ajout_membre" action="ajout.php" method="post"> 
+                <div id="form" hidden>
+                    <form id="formulaire_ajout" name="ajout_membre" method="post"> 
                         <p class="form_ajout">
-                            Pseudos : <input type="text" name="pseudo" required/>
+                            Pseudos : <input type="text" name="pseudo" id="pseudo" required/>
                             <br/>
-                            Description : <input type="text" name="desc"/>
+                            Description : <input type="text" name="desc" id="desc" />
                             <br />
-                            Rôle : <input type="text" name="role" />
+                            Rôle : <input type="text" name="role" id="role"/>
                             <br/>
-                            Membre depuis : <input type="date" name="date_join"/>
+                            Membre depuis : <input type="date" name="date_join" id="join"/>
                             <br/>
-                            Lien : <input type="text" name="lien"/>
+                            Lien : <input type="text" name="lien" id="lien"/>
                         </p>
-                        <button type="submit" name="submit">Ajouter</button>
+                        <button type="submit" name="submit" id="submitForm">Ajouter</button>
                     </form>
                 </div>
             </div>
@@ -59,5 +52,6 @@
               </svg></a>
 
         </footer>
+    <script>initPage()</script>
     </body>
 </html>
