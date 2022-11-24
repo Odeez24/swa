@@ -1,5 +1,6 @@
 :root{
-    --cl-text: #4f4f4f;
+    --cl-text: #0f0f0f;
+    --cl-title : #1f1f1f;
     --cl-body: #efefef;
     --cl-header: #eaeaea;
     --cl-footer: #dfdfdf;
@@ -54,7 +55,7 @@ footer{
     margin: 0;
     margin-left: 40px;
     top: 10px;
-    color: #5f5f5f;
+    color: var(--cl-title);
     font-size: 62px;
 }
 
