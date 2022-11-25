@@ -167,17 +167,17 @@ footer{
     padding-bottom: 2%;
 }
 
-#ajout_membre{
+#addMember{
     width: 35%;
     margin-right: 5%;
     margin-left: 10%;
 }
 
-#retireMembre{
+#removeMember{
     width: 35%;
 }
 
-.confModif{
+.msgModif{
     font-size: 19px;
 }
 
@@ -189,7 +189,7 @@ footer{
     
 }
 
-#afficheMembre{
+#showMember{
     margin-top: 10px;
     width: 95%;
 }
@@ -203,18 +203,19 @@ footer{
 #searchbar{
     width: 25%;
     border-radius: 5px;
-
+    border: solid black 1px;
 }
 
-#boxAfficheMembre{
+#boxShowMember{
     padding: 5px;
 }
 
-.boxMembre{
+.boxMember{
     display: inline-block;
     vertical-align: top;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    
+    width: 45%;
+    height: 20%;
 }
 
 /*<---Footer--->*/
