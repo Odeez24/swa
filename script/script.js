@@ -1,32 +1,32 @@
 function initPage (){
   var isOpen = false;
-  document.getElementById("openFormaj").addEventListener("click", defileAjoutMembre);
-  document.getElementById("openFormre").addEventListener("click", defileRetireMembre);
-  document.getElementById("submitFormaj").addEventListener("click", ajout);
-  document.getElementById("submitFormre").addEventListener("click", retire);
+  document.getElementById("openFormAdd").addEventListener("click", revealAddMembrer);
+  document.getElementById("openFormRemove").addEventListener("click", revealRemoveMembrer);
+  document.getElementById("submitFormAdd").addEventListener("click", Add);
+  document.getElementById("submitFormRemove").addEventListener("click", Remove);
 }
 
-function defileAjoutMembre(e) {
+function revealAddMembrer(e) {
   e.preventDefault();
-  if (document.getElementById("formaj").hidden == false){
-    document.getElementById("formaj").hidden = true;
+  if (document.getElementById("formAdd").hidden == false){
+    document.getElementById("formAdd").hidden = true;
   } else {
-    document.getElementById("formaj").hidden = false;
-    document.getElementById("confAjout").hidden = true;
+    document.getElementById("formAdd").hidden = false;
+    document.getElementById("msgAdd").hidden = true;
   }
 }
 
-function defileRetireMembre(e) {
+function revealRemoveMembrer(e) {
   e.preventDefault();
-  if (document.getElementById("formre").hidden == false){
-    document.getElementById("formre").hidden = true;
+  if (document.getElementById("formRemove").hidden == false){
+    document.getElementById("formRemove").hidden = true;
   } else {
-    document.getElementById("formre").hidden = false;
-    document.getElementById("confRetire").hidden = true;
+    document.getElementById("formRemove").hidden = false;
+    document.getElementById("msgRemove").hidden = true;
   }
 }
 
-function ajout(e){
+function Add(e){
   e.preventDefault();
 
   let pseudo = document.getElementById('pseudo').value;
@@ -40,24 +40,24 @@ function ajout(e){
   } else {
     document.getElementById("formaj").hidden = false;
   }
-  if (document.getElementById("confAjout").hidden == false){
-    document.getElementById("confAjout").hidden = true;
+  if (document.getElementById("msgAdd").hidden == false){
+    document.getElementById("msgAdd").hidden = true;
   } else {
-    document.getElementById("confAjout").hidden = false;
+    document.getElementById("msgAdd").hidden = false;
   }
 }
 
-function retire(e){
+function Remove(e){
   e.preventDefault();
 
-  if (document.getElementById("formre").hidden == false){
-    document.getElementById("formre").hidden = true;
+  if (document.getElementById("formRemove").hidden == false){
+    document.getElementById("formRemove").hidden = true;
   } else {
-    document.getElementById("formre").hidden = false;
+    document.getElementById("formRemove").hidden = false;
   }
-  if (document.getElementById("confRetire").hidden == false){
-    document.getElementById("confRetire").hidden = true;
+  if (document.getElementById("msgRemove").hidden == false){
+    document.getElementById("msgRemove").hidden = true;
   } else {
-    document.getElementById("confRetire").hidden = false;
+    document.getElementById("msgRemove").hidden = false;
   }
 }
