@@ -20,7 +20,7 @@
                 <p class="textForm">Pour ajouter un membre du serveur : 
                     <button class="openForm" id="openFormaj" >Cliquer ici</button>
                 </p>
-                <div class="form" id="formaj">
+                <div class="form" id="formaj" hidden>
                     <form id="formulaire_ajout" name="ajout_membre"> 
                         <p class="formAjout">
                             <label for="pseudo">Pseudo</label> 
@@ -37,12 +37,17 @@
                         <button type="submit" name="submit" class="submitForm" id="submitFormaj">Ajouter</button>
                     </form>
                 </div>
+                <div class="modifMembre" id="confAjout" hidden>
+                    <p>
+                        L'utilisateur a bien été ajouter au serveur
+                    </p>
+                </div>
             </div>
             <div id="retireMembre">
                 <p class="textForm">Pour retirer un membre du serveur : 
                     <button class="openForm" id="openFormre" >Cliquer ici</button>
                 </p>
-                <div class="form" id="formre">
+                <div class="form" id="formre" hidden>
                     <form id="formulaireReture" name="retireMembre">
                         <p>
                             <label for="pseudo">Pseudo de la personne a efacer</label>
@@ -51,7 +56,11 @@
                         <button type="submit" name="submit" class="submitForm" id="submitFormre">Retirer</button>
                     </form>
                 </div>
-
+                <div class="modifMembre" id="confRetire" hidden>
+                    <p>
+                        L'utilisateur a bien été retirer du serveur
+                    </p>
+                </div>
             </div>
         </main>
         <footer>

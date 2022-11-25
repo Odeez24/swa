@@ -12,6 +12,7 @@ function defileAjoutMembre(e) {
     document.getElementById("formaj").hidden = true;
   } else {
     document.getElementById("formaj").hidden = false;
+    document.getElementById("confAjout").hidden = true;
   }
 }
 
@@ -21,6 +22,7 @@ function defileRetireMembre(e) {
     document.getElementById("formre").hidden = true;
   } else {
     document.getElementById("formre").hidden = false;
+    document.getElementById("confRetire").hidden = true;
   }
 }
 
@@ -32,8 +34,30 @@ function ajout(e){
   let role = document.getElementById('role').value;
   let date = document.getElementById('join').value;
   let lien = document.getElementById('lien').value;
+
+  if (document.getElementById("formaj").hidden == false){
+    document.getElementById("formaj").hidden = true;
+  } else {
+    document.getElementById("formaj").hidden = false;
+  }
+  if (document.getElementById("confAjout").hidden == false){
+    document.getElementById("confAjout").hidden = true;
+  } else {
+    document.getElementById("confAjout").hidden = false;
+  }
 }
 
 function retire(e){
   e.preventDefault();
+
+  if (document.getElementById("formre").hidden == false){
+    document.getElementById("formre").hidden = true;
+  } else {
+    document.getElementById("formre").hidden = false;
+  }
+  if (document.getElementById("confRetire").hidden == false){
+    document.getElementById("confRetire").hidden = true;
+  } else {
+    document.getElementById("confRetire").hidden = false;
+  }
 }
