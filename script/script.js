@@ -1,12 +1,12 @@
 function initPage (){
   var isOpen = false;
-  document.getElementById("openFormAdd").addEventListener("click", revealAddMembrer);
-  document.getElementById("openFormRemove").addEventListener("click", revealRemoveMembrer);
+  document.getElementById("openFormAdd").addEventListener("click", revealAddMember);
+  document.getElementById("openFormRemove").addEventListener("click", revealRemoveMember);
   document.getElementById("submitFormAdd").addEventListener("click", Add);
   document.getElementById("submitFormRemove").addEventListener("click", Remove);
 }
 
-function revealAddMembrer(e) {
+function revealAddMember(e) {
   e.preventDefault();
   if (document.getElementById("formAdd").hidden == false){
     document.getElementById("formAdd").hidden = true;
@@ -16,7 +16,7 @@ function revealAddMembrer(e) {
   }
 }
 
-function revealRemoveMembrer(e) {
+function revealRemoveMember(e) {
   e.preventDefault();
   if (document.getElementById("formRemove").hidden == false){
     document.getElementById("formRemove").hidden = true;
@@ -34,6 +34,8 @@ function Add(e){
   let role = document.getElementById('role').value;
   let date = document.getElementById('join').value;
   let lien = document.getElementById('lien').value;
+
+  
 
   if (document.getElementById("formaj").hidden == false){
     document.getElementById("formaj").hidden = true;
