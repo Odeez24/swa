@@ -188,6 +188,18 @@ footer{
     padding-bottom: 2%;
 }
 
+.confModif{
+    font-size: 19px;
+}
+
+.check{
+    width: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: green;
+    
+}
+
 /*<---Footer--->*/
 
 #contact{
