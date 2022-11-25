@@ -35,12 +35,12 @@ function Add(e){
   let date = document.getElementById('join').value;
   let lien = document.getElementById('lien').value;
 
-  
 
-  if (document.getElementById("formaj").hidden == false){
-    document.getElementById("formaj").hidden = true;
+
+  if (document.getElementById("formAdd").hidden == false){
+    document.getElementById("formAdd").hidden = true;
   } else {
-    document.getElementById("formaj").hidden = false;
+    document.getElementById("formAdd").hidden = false;
   }
   if (document.getElementById("msgAdd").hidden == false){
     document.getElementById("msgAdd").hidden = true;
