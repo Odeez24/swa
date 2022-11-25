@@ -1,8 +1,9 @@
 :root{
     --cl-text: #0f0f0f;
+    --cl-text-white: #f0f0f0;
     --cl-title : #1f1f1f;
     --cl-body: #efefef;
-    --cl-header: #eaeaea;
+    --cl-header: #2f2f2f;
     --cl-footer: #dfdfdf;
     --cl-button: #657ed6;
     --cl-text-button : #f0f0f0;
@@ -25,7 +26,8 @@ body{
 header{
     background-color: var(--cl-header);
     height: 170px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 20px 10px;
+    color: var(--cl-text-white);
 }
 
 main{
@@ -55,11 +57,10 @@ footer{
     margin: 0;
     margin-left: 40px;
     top: 10px;
-    color: var(--cl-title);
     font-size: 62px;
 }
 
-#desc{
+#servdesc{
     position: relative;
     margin: 0;
     font-size: 30px;
@@ -97,24 +98,87 @@ footer{
     margin: 1px;
 }
 
-#ajout_membre{
-    display: block;
-    text-align: left;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 5px;
-    width: 45%;
-}
-
-#text_ajout{
+.textForm{
     font-size: 20px;
 }
 
+.openForm{
+    background-color: var(--cl-button);
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: var(--cl-text-button);
+}
 
-#form{
+.form{
     font-size: 15px;
 }
 
 
+.form label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form input{
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.form textarea {
+    align-items: center;
+    text-align: center;;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.submitForm{
+    background-color: var(--cl-button);
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: var(--cl-text-button);
+}
+
+#ajout_membre{
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    max-width: 28.5em;
+    text-align: center;
+    margin-right: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+}
+
+#retireMembre{
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    max-width: 28.5em;
+    text-align: center;
+    margin-left: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+}
 
 /*<---Footer--->*/
 
