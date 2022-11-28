@@ -29,22 +29,22 @@ function revealRemoveMember(e) {
 function Add(e){
   e.preventDefault();
 
-  let pseudo = document.getElementById('pseudoAdd').value;
-  let desc = document.getElementById('desc').value;
-  let role = document.getElementById('role').value;
-  let date = document.getElementById('join').value;
-  let lien = document.getElementById('lien').value;
-
+  const pseudo = document.getElementById('pseudoAdd').value;
+  const desc = document.getElementById('desc').value;
+  const role = document.getElementById('role').value;
+  const date = document.getElementById('join').value;
+  const lien = document.getElementById('lien').value;
 
   const newMember = {
-    "Pseudo": pseudo,
-    "Description": desc,
-    "Rôle": role,
-    "Date": date,
-    "Réseaux Sociaux": lien,
+    "Pseudo": JSON.stringify(pseudo),
+    "Description": JSON.stringify(desc),
+    "Rôle": JSON.stringify(role),
+    "Date": JSON.stringify(date),
+    "Réseaux Sociaux": JSON.stringify(lien),
   };
 
-  fetch('bdd.json')
+
+  fetch('./script/data.json')
     .then((response) => response.json())
     .then((json) => console.log(json));
 
