@@ -43,7 +43,7 @@ function Add(e){
     "Réseaux Sociaux": JSON.stringify(lien),
   };
 
-
+  
   fetch('./script/data.json')
     .then((response) => response.json())
     .then((json) => console.log(json));

@@ -1,4 +1,5 @@
 :root{
+    --cl-border: #101010;
     --cl-text: #0f0f0f;
     --cl-text-white: #f0f0f0;
     --cl-title : #1f1f1f;
@@ -14,6 +15,8 @@
 html, body{
     height: 100%;
     margin: 0;
+    display: flex;
+    flex-flow: column;
 }
 
 
@@ -31,13 +34,18 @@ header{
 }
 
 main{
+    display: flex;
+    align-items: center;
+    flex: 2 1 100px;
+    flex-flow: column;
     width: 90%;
     margin: 5%;
     margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 footer{
-    position: relative;
+    flex: 0 1 10px;
     background-color: var(--cl-footer);
     text-align: center;
 }
@@ -86,7 +94,6 @@ footer{
     border-radius: 5px;
     padding: 8px;
     text-align: center;
-    right: 19px;
     background-color: var(--cl-button);
     outline: none;
     text-decoration: none;
@@ -96,6 +103,13 @@ footer{
     font-size: 25px;
     color: var(--cl-text-button);
     margin: 1px;
+}
+
+#modifMember{
+    display: flex;
+    gap: 0% 4%;
+    width: 100%;
+    justify-content: center;
 }
 
 .textForm{
@@ -111,7 +125,9 @@ footer{
 }
 
 .form{
+    height: auto;
     font-size: 15px;
+    align-self: center;
 }
 
 
@@ -123,27 +139,38 @@ footer{
 }
 
 .form input{
-    align-items: center;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    text-align: left;
     height: 30px;
-    width: 200px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid var(--cl-border);
     box-shadow: 1px 1px 1px #999;
 }
 
+input::placeholder{
+    text-align: center;
+}
+
+in
+
+textarea::placeholder{
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+#join{
+    text-align: center;
+}
+
 .form textarea {
-    align-items: center;
-    text-align: center;;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
-    width: 200px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
+    text-align: left;
+    height: 55px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid var(--cl-border);
     box-shadow: 1px 1px 1px #999;
+    resize: none;
 }
 
 .submitForm{
@@ -156,25 +183,19 @@ footer{
 
 .box{
     display: inline-block;
+    flex: 0 0 auto;
     vertical-align: top;
     position: relative;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 5px;
     text-align: center;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 2%;
+    align-items: center;
 }
 
-#addMember{
-    width: 35%;
-    margin-right: 5%;
-    margin-left: 10%;
-}
-
-#removeMember{
-    width: 35%;
+.formbox{
+    padding: 10px;
+    flex: 1;
 }
 
 .msgModif{
@@ -191,7 +212,7 @@ footer{
 
 #showMember{
     margin-top: 10px;
-    width: 95%;
+    width: 90%;
 }
 
 
@@ -223,6 +244,7 @@ footer{
 
 #contact{
     padding: 8px;
+    padding-bottom: 0;
     font-size: 20px;
 }
 
