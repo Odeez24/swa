@@ -106,7 +106,7 @@ footer{
 }
 
 #modifMember{
-    display: flex;
+    display: flex; 
     gap: 0% 4%;
     width: 100%;
     justify-content: center;
@@ -151,16 +151,10 @@ input::placeholder{
     text-align: center;
 }
 
-in
-
 textarea::placeholder{
     text-align: center;
     position: relative;
     top: 30%;
-}
-
-#join{
-    text-align: center;
 }
 
 .form textarea {
